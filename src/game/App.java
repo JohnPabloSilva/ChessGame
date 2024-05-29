@@ -1,11 +1,13 @@
 package game;
 
-import board.Position;
-
 public class App {
     public static void main(String[] args) throws Exception {
 
-        Position pos = new Position(3, 3);
-        System.out.println(pos);
+        ChessMatch cm = new ChessMatch();
+
+        UI.printBoard(cm.getPieces());
+
     }
+
+    
 }
